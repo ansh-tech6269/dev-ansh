@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>todo task</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    
+    <!-- font link-->
+     <link href="font/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav sidebar sidebar-light accordion "
+            style="background-color: #FEF5FF; border-right: 1px solid #d2d2d2;" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                </div>
+                <span><img src="TODO.svg" alt="none"></span>
+                <i class="fa-solid fa-chevron-right" class=""></i>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <img src="image/task.png" alt="task-icon" style="padding-right: 5px; font-weight: bold;">
+                    <span>Task</span>
+
+                </a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="#">
+                    <img src="image/activites.png" alt="activities-icon" style="padding-right: 5px;">
+                    <span>Activities </span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading" style="padding-left: 3rem;">
+                MAIN
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <img src="image/dashboard.png" alt="task-icon" style="padding-right: 5px;">
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <img src="image/calendar.png" alt="task-icon" style="padding-right: 5px;">
+                    <span>Calendar</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <img src="image/starts.png" alt="task-icon" style="padding-right: 5px;">
+                    <span>Starts</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <img src="image/notes.png" alt="task-icon" style="padding-right: 5px;">
+                    <span>Note</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <img src="image/report.png" alt="task-icon" style="padding-right: 5px;">
+                    <span>Report</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading" style="padding-left: 3rem;">
+                RECORDS
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <img src="image/team.png" alt="task-icon" style="padding-right: 5px;">
+                    <span>teams</span>
+                </a>
+            </li>
+
+            <br><br><br><br><br><br><br><br><br> <!-- for now -->
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <img src="image/support.png" alt="task-icon" style="padding-right: 5px;">
+                    <span>Support</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <img src="image/setting.png" alt="task-icon" style="padding-right: 5px;">
+                    <span>settings</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <img src="image/log_out.png" alt="task-icon" style="padding-right: 5px;">
+                    <span>Logout</span>
+                </a>
+            </li>
+
+
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex shadow p-3 mb-5 bg-body rounded">
+                <img class="sidebar-card-illustration mb-1" src="image/emma.jpg" alt="...">
+                <p class="text-left mb-1 dropdown" style="color: #393939;"><strong>Emma emma </strong>emma123@gmail.com
+                </p>
+                <a class="" href=""></a>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <span style="color: #000;">Monday, 2 ,july</span>
+
+                    <!-- Topbar Search -->
+                    <form class="navbar-search">
+                        <nav class="navbar navbar-light bg-light">
+                            <form class="container-fluid" >
+                                <div class="input-group serch" style="border: 2px solid black; border-radius: 20px; ">
+                                    <!--<span class="input-group-text" id="basic-addon1">
+                                        <i class="fa fa-search" style="border: none;"></i></span>-->
+                                    <i class="fa fa-search"  style="border: none;padding-top: 10px;padding-left: 20px;"></i>
+                                    <input type="text" class="form-control " style="border:none;border-radius: 30px;"
+                                        placeholder="search here..." aria-label="search"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </form>
+                        </nav>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto" style="display: flex; justify-content: center;align-items: center;">
+
+                        <span style="color: #393939; font-size: 25px; margin-right: 10rem;">10:10 <sup>PM</sup></span>
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                        </li>
+
+                        <button class="btn btn-primary rounded-pill" type="submit">Share</button>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-regular fa-bell" style="color: #000;"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="user" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-dark-600 small"
+                                    style="color: #393939;">Emma</span>
+                                <img class="img-profile rounded-circle me-1" src="image/emma.jpg">
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800 ps-3 ms-3"
+                            style="padding-top: 2rem;padding-left: 2rem; font-weight: bold;">My Dashboard</h1>
+
+                        <div class="avatar" style="display: flex; align-items: center; justify-content: end;">
+
+                            <a href="#!">
+                                <img src="image/emma.jpg" alt="avatar" class="img-fluid rounded-circle me-1" width="35"
+                                    height="35">
+                            </a>
+                            <a href="#!">
+                                <img src="image/deashboard-image3.webp" alt="avatar"
+                                    class="img-fluid rounded-circle me-1 p-0" width="35" height="35">
+                            </a>
+                            <a href="#!">
+                                <img src="image/dashboard2.jpg" alt="avatar" class="img-fluid rounded-circle me-0 p-0"
+                                    width="30" height="35">
+                            </a>
+                            <a href="#!">
+                                <img src="image/dashboard-image4.jpg" alt="avatar"
+                                    class="img-fluid rounded-circle me-1 pe-1" width="30">
+                            </a>
+                            <button type="button"
+                                style="border-radius: 15px; border: 0.5px solid #D0D0D0; height: 35px; width: 35px;">
+                                <i class="fas fa-plus text-body"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- page Heading end -->
+
+                    <hr>
+                    <!-- good morning message -->
+                    <div class="container-fluid">
+                        <span class="text-bold h3 mb-0 text-gray-800 ps-3 ms-3 text-decoration-underline"
+                            style="font-family: Arial; font-weight: 700; text-decoration-line: underline; color: rgb(0,0,1);">Good
+                            Morning,Emma</span><span>👋</span>
+                    </div>
+                    <!--tasks box infomation -->
+                    <div class="container-fluid">
+                        <div class="container flex-wrap">
+                            <div class="row">
+                                <div class="container d-flex justify-content-around" style="width: 50%;">
+                                    <div class="card shadow "
+                                        style="width: 250px;height: 135px; border-radius: 5px 5px 0 0;
+                                background: linear-gradient(rgba(255, 210, 210, 1),rgba(255, 241, 241, 1));margin-right: 40px;">
+                                        <div class="card-body text-center d-flex flex-column" style="">
+                                            <a href="!#">
+                                                <img src="image/all_task.png" alt="avatar">
+                                            </a>
+                                            <span class="pt-1 " style="color: rgba(0,0,1);font-family: inter;">All
+                                                Tasks</span>
+                                            <span class="pt-2" style="color: rgb(0,0,1);font-family: inter;">10</span>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow "
+                                        style="width: 250px;height: 135px; border-radius: 5px 5px 0 0;
+                                background: linear-gradient(rgba(198, 245, 255, 1),rgba(241, 253, 255, 1)); margin-right: 0px;">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <a href="!#">
+                                                <img src="image/pending.png" alt="avatar">
+                                            </a>
+                                            <span class="pt-1 "
+                                                style="color: rgb(0,0,1);font-family: inter;">Pending</span>
+                                            <span class="pt-2" style="color: rgb(0,0,1);font-family: inter;">10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container d-flex justify-content-around " style="width: 50%;">
+                                    <div class="card shadow  " style="width: 250px;height: 135px; border-radius: 5px 5px 0 0;
+                                background: linear-gradient(rgba(236, 197, 255, 1),rgba(250, 238, 255, 1));">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <a href="!#">
+                                                <img
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAVZJREFUSEvtle0NAUEQhkclqASdUAkqQSWohE7wXHYuc2v3ZvciRJhE/Ljdeef9uLmRfKhGH8KVP/DblP8qqZciMhGRcfg/i8hJRK7hV6RaDWMA1wEs1Rzg7eP5vgS5FPj4YDWPGgJEwd4W7Fce+xLgTWBK8xwrhtqZIWDOvWx5wLC5hNswWTgyAo4lVC94H7BlAdNpiXdhUJU/2z/3IPbUlc4MZa1hWM1CZ+4YmEmRywaJlBKWmrp5csfAdtqidGamIRcqd7KPBa4NUp8CqdePYDJEUxYYeblAdQ7VaBzOqlW6cCCF1/RtPLfAvAb4S2VDMWAIa19LKMf4lcDWQkLarNQ4XG4aBzC2FmaBrSy68JPvYeEAgOKzet4STS0Q+yrQv01iIZgeQ2L7AeksoRRwaolUYj4df9rz3q5GotlAVLXokFLN+zoNxPSv/YF9jV504vekvgOvVEYfLGduPwAAAABJRU5ErkJggg==" />
+                                            </a>
+                                            <span class="pt-1 " style="color: rgb(0,0,1);font-family: inter;">Tasks
+                                                Completed</span>
+                                            <span class="pt-2" style="color: rgb(0,0,1);font-family: inter;">10</span>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow"
+                                        style="width: 250px;height: 135px; border-radius: 5px 5px 0 0;
+                                background: linear-gradient(rgba(255, 203, 174, 1),rgba(255, 241, 234, 1)); margin-left: 70px;">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <a href="!#">
+                                                <img src="image/all-project.png" alt="avatar">
+                                            </a>
+                                            <span class="pt-1 " style="color: rgb(0,0,1);font-family: inter;">All
+                                                Project</span>
+                                            <span class="pt-2" style="color: rgb(0,0,1);font-family: inter;">10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Task container -->
+                        <div class="container-fluid overflow-auto ">
+                            <div class="row">
+                                <div class="card col-md-12 col-lg-6 col-sm-12 mt-3"
+                                    style="width: 45%; height: auto; border:5px; ">
+                                    <div class="card-header" style="background:rgba(125, 162, 255, 1)">
+                                        <span style="color: rgb(0,0,1); font-family: inter;">Upcoming
+                                            Tasks</span>
+                                        <a href="#"
+                                            style="color:rgba(255, 255, 255, 1);list-style: none; float: right;">View
+                                            Details</a>
+                                    </div>
+                                    <div class="card-body overflow-auto"
+                                        style="background-color: rgba(204, 215, 245, 1);">
+                                        <p class="h1"
+                                            style="font-family: inter; font-weight: 300;font-size: 16px;padding: 0 0 10px 0;margin: 0; color:rgba(0, 38, 136, 1) ;">
+                                            Task Name</p>
+                                        <p class="" style="color: rgba(73, 124, 255, 1); ">#1.<span class=""
+                                                style="color:rgba(0, 38, 136, 1);">Upcoimg Task 1 Lorem ipsum Is
+                                                Simply
+                                                Dummy Text of
+                                                The Printing
+                                                And</span></p>
+                                        <p style="color: rgba(73, 124, 255, 1);">#2.<span
+                                                style="color:rgba(0, 38, 136, 1); padding: 0;">Upcoming Task 2 Lorem
+                                                ipsum Is Simply Dummy Text of The Printing
+                                                And</span></p>
+                                        <p style="color: rgba(73, 124, 255, 1);">#3.<span
+                                                style="color:rgba(0, 38, 136, 1);">Upcoming Task 3 Lorem ipsum Is
+                                                Simply
+                                                Dummy Text of The Printing
+                                                And</span></p>
+                                        <p style="color:rgba(73, 124, 255, 1);">#4.<span
+                                                style="color:rgba(0, 38, 136, 1);">Upcoming Task 4 Lorem ipsum Is
+                                                Simply
+                                                Dummy Text of The Printing
+                                                And</span></p>
+                                        <p style="color: rgba(73, 124, 255, 1);">#5.<span class="mb-2"
+                                                style="color:rgba(0, 38, 136, 1); padding: 0 0 10px 0;">Upcoming
+                                                Task 5
+                                                Lorem ipsum Is Simply
+                                                Dummy Text of The Printing
+                                                And</span></p>
+                                    </div>
+                                </div>
+                                <!--Last task container-->
+                                <div class="card shadow col-md-12 col-lg-6 col-sm-12 mt-3"
+                                    style="width: 50%; height: 50%; bordr-5px;">
+                                    <div class="card-header" style="background:rgba(255, 163, 111, 1)">
+                                        <span class="" style="color: rgb(0,0,1); font-family: inter; ;">Last 5
+                                            Tasks</span>
+                                        <a href="#" class=""
+                                            style="color:rgba(255, 255, 255, 1);list-style: none; float: right;">View
+                                            Details</a>
+                                    </div>
+                                    <div class="card-body overflow-auto"
+                                        style="background-color: rgba(255, 220, 200, 1);">
+                                        <p class="h1"
+                                            style="font-family: inter; font-weight: 300;font-size: 16px;padding: 0 0 10px 0;margin: 0; color: rgba(166, 64, 64, 1);">
+                                            Task Name</p>
+                                        <p class="" style="color:rgba(255, 73, 73, 1); ">#1.<span class=""
+                                                style="color:rgba(166, 64, 64, 1);">Last Task 1 Lorem ipsum Is Simply
+                                                Dummy Text of
+                                                The Printing
+                                                And</span></p>
+                                        <p style="color: rgba(255, 73, 73, 1);">#2.<span
+                                                style="color:rgba(166, 64, 64, 1); padding: 0;">Last Task 2 Lorem
+                                                ipsum Is Simply Dummy Text of The Printing
+                                                And</span></p>
+                                        <p style="color: rgba(255, 73, 73, 1);">#3.<span
+                                                style="color:rgba(166, 64, 64, 1);">Last Task 3 Lorem ipsum Is
+                                                Simply
+                                                Dummy Text of The Printing
+                                                And</span></p>
+                                        <p style="color:rgba(255, 73, 73, 1);">#4.<span
+                                                style="color:rgba(166, 64, 64, 1);">Last Task 4 Lorem ipsum Is
+                                                Simply
+                                                Dummy Text of The Printing
+                                                And</span></p>
+                                        <p style="color: rgba(255, 73, 73, 1);">#5.<span
+                                                style="color:rgba(166, 64, 64, 1);">Last Task 5 Lorem ipsum Is Simply
+                                                Dummy Text of The Printing
+                                                And</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid flex-wrap">
+                        <div class="row d-flex">
+                            <!-- Today tasks box -->
+                            <div class="d-lg-inline mt-3 col-md-12 col-lg-6 col-sm-12"
+                                style="width: 45%;height: auto;">
+                                <span class="h3 "
+                                    style="color: rgba(0, 0, 0, 1);font-family: Arial;font-weight: 700;font-size: 30px;">Today's
+                                    Tasks</span>
+                                <a href="#" class=" "
+                                    style="color:rgba(0, 194, 255, 1);list-style: none;float: right; font-family: Arial;font-weight: 400;font-size: 18px;">View
+                                    Details</a>
+                                <div class="card  " style=" border-radius: 5px; background: rgba(255, 255, 255, 1);">
+                                    <div class="card-header shadow d-lg-inline" style="height: 70px;">
+                                        <div>
+                                            <span class=""
+                                                style="font-family:inter;font-weight: 400;font-size: 20px; color: rgba(0,0,1);">Today
+                                                Task</span>
+                                            <span class="dropdown mt-1" style="float:right;">Today</span>
+                                            <button type="button" class="btn btn-outline shadow mt-auto"
+                                                style="border-radius: 5px;float:right; background:rgba(249, 249, 249, 1);height: 25px;font-size: 11px;font-family:Inter;margin:0 10px 0 0;">Add
+                                                Task</button>
+                                        </div>
+                                        <div>
+                                            <p class="" style="color: #000;">2 Task completed out of 6<span class="progress-bar progress-bar-custom mt-2" role="progressbar" style="width: 25%; height: 5px; border-radius: 10px;float: right;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body" style="height: 290px;">
+                                        <div class="col-md-6 d-lg-inline">
+                                            <span class=""
+                                                style="font-family: Inter;font-weight: 400;font-size: 15px;color: black;">Task
+                                                Name</span>
+                                            <span class=""
+                                                style="font-family: Inter;font-weight: 400;font-size: 15px;color: black; float: right; margin: 0 10% 0 0 ;">Edit</span>
+                                            <span class=""
+                                                style="font-family: Inter;font-weight: 400;font-size: 15px;color: black; float: right; margin:0 18% 0 0">Status</span>
+
+                                        </div>
+                                        <div class="task-item row align-items-center py-2 border-bottom ">
+                                            <div class="col-md-6">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="task-number text-danger"
+                                                        style="font-size: 40px;">01</span>
+                                                    <div class="ms-3">
+                                                        <div class="task-title"
+                                                            style="font-size: 20px;font-family: Inter;font-weight: 400; color: black;">
+                                                            Todo Task 1</div>
+                                                        <div class="task-details">complete in 2 hours & <span
+                                                                class="text-danger">due to 3 hour</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                Running
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <a href="#">&#9998</a>
+                                                <a href="#">&#128465</a>
+                                            </div>
+                                        </div>
+                                        <div class="task-item row align-items-center py-2 border-bottom">
+                                            <div class="col-md-6">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="task-number text-success"
+                                                        style="font-size: 40px;">02</span>
+                                                    <div class="ms-3">
+                                                        <div class="task-title"
+                                                            style="font-size: 20px;font-family: Inter;font-weight: 400; color: black;">
+                                                            Todo Task 2</div>
+                                                        <div class="task-details">complete in 2 hours</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                complete
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <a href="#">&#9998</a>
+                                                <a href="#">&#128465</a>
+                                            </div>
+                                        </div>
+                                        <div class="task-item row align-items-center py-2">
+                                            <div class="col-md-6">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="task-number text-primary"
+                                                        style="font-size: 40px;">03</span>
+                                                    <div class="ms-3">
+                                                        <div class="task-title"
+                                                            style="font-size: 20px;font-family: Inter;font-weight: 400; color: black;">
+                                                            Todo Task 1</div>
+                                                        <div class="task-details">pending task</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                pending
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <a href="#">&#9998</a>
+                                                <a href="#">&#128465</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--schedule container-->
+                            <div class=" container-fluid  flex-wrap col-lg-6 col-md-12  col-sm-12 mt-3"
+                                style="width: 48%;height: 374px; ">
+                                <span class="h3"
+                                    style="color: rgba(0, 0, 0, 1);font-family: Arial;font-weight: 700;font-size: 30px;">Schedules</span>
+                                <a href="#" class=" "
+                                    style="color:rgba(0, 194, 255, 1);list-style: none;float: right; font-family: Arial;font-weight: 400;font-size: 18px;">View
+                                    Details</a>
+                                <div class="card" style="border-radius: 5px; background: rgba(255, 255, 255, 1); ">
+                                    <div class="card-header shadow" style="height: 360px;">
+                                        <div class="col-11" style="margin-left: 65px;">
+                                            <div class="d-flex justify-content-between time-header"
+                                                style="color:rgb(0,0,1);">
+                                                <span>09:00</span>
+                                                <span>10:00</span>
+                                                <span>11:00</span>
+                                                <span>12:00</span>
+                                                <span>13:00</span>
+                                                <span>14:00</span>
+                                                <span>15:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="container-fluid d-flex ms-0">
+                                            <div class=" d-flex justify-content-between mt-2"
+                                                style="flex-direction: column; width:50px; height: 280px; color: rgb(0,0,1);">
+                                                <span class="p-0">Mon</span>
+                                                <span>Tue</span>
+                                                <span>Wed</span>
+                                                <span>Thu</span>
+                                                <span>Fri</span>
+                                            </div>
+                                            <div class="container-fluid d-flex">
+                                                <div class="row">
+                                                    <div class="d-flex col-11 mt-2 ms-0"
+                                                        style="border-left: 2px solid black;width: 530px; height: 280px; flex-direction: column;">
+                                                        <div class="bg-white"></div>
+                                                        <span class="bg-secondary"></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+
+                                                        <!-- Graph input-->
+                                                        <div class="btn ml-5 mt-1 flex-wrap"
+                                                            style="width: 109px;height: 31px; border-radius: 15px;background-color: rgba(255, 102, 68, 1); border:none;">
+                                                            <div class="btn mt-0 d-flex justify-content-center align-items-center"
+                                                                style="width: 75px;height: 23px;border-radius: 15px;background-color: rgb(254, 252, 252,1); ">
+                                                                <span class="d-inline-block"
+                                                                    style="font-family: Inter;font-weight: 300;font-size: 10px;color: rgb(0,0,1)">Todo
+                                                                    App</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn flex-wrap " style="width: 137px;height: 35px; border-radius: 15px;background-color:rgba(45, 192, 255, 1); border:none;
+                                                        margin-left: 190px; margin-top: 24px;">
+                                                            <div class="btn d-flex justify-content-center align-items-center p-0"
+                                                                style="width: 115px;height: 23px;border-radius: 15px;background-color: rgb(254, 252, 252,1); ">
+                                                                <span
+                                                                    style="font-family: Inter;font-weight: 300;font-size: 10px;color: rgb(0,0,1);text-align: center;">Develop
+                                                                    Todo App</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn  flex-wrap" style="width: 163px;height: 35px; border-radius: 15px;background-color:rgba(255, 68, 203, 1); border:none;
+                                                        margin-left: 120px; margin-top: 24px;">
+                                                            <div class="btn d-flex justify-content-center align-items-center p-0"
+                                                                style="width: 145px;height: 23px;border-radius: 15px;background-color: rgb(254, 252, 252,1); ">
+                                                                <span
+                                                                    style="font-family: Inter;font-weight: 300;font-size: 10px;color: rgb(0,0,1);text-align: center;">Create
+                                                                    Database For Todo</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn flex-wrap" style="width: 93px;height: 35px; border-radius: 15px;background-color:rgba(45, 192, 255, 1); border:none;
+                                                        margin-left: 310px; margin-top: 24px;">
+                                                            <div class="btn d-flex justify-content-center align-items-center p-0"
+                                                                style="width: 68px;height: 23px;border-radius: 15px;background-color: rgb(254, 252, 252,1); ">
+                                                                <span
+                                                                    style="font-family: Inter;font-weight: 300;font-size: 10px;color: rgb(0,0,1);text-align: center;">Web
+                                                                    Test</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn flex-wrap" style="width: 93px;height: 35px; border-radius: 15px;background-color:rgba(173, 255, 134, 1); border:none;
+                                                        margin-left: 90px; margin-top: 24px;">
+                                                            <div class="btn d-flex justify-content-center align-items-center p-0"
+                                                                style="width: 68px;height: 23px;border-radius: 15px;background-color: rgb(254, 252, 252,1); ">
+                                                                <span
+                                                                    style="font-family: Inter;font-weight: 300;font-size: 10px;color: rgb(0,0,1);text-align: center;">Log
+                                                                    In Page</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
+        <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
